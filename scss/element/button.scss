@@ -1,0 +1,16 @@
+.btn{
+        padding: 5px 12px;
+        border: 2px solid $brand-success;
+        color: $brand-success;
+        border-radius: 6px;
+        text-align: center;
+        font-family: "NautilusPompiliusRegular";
+        font-size: 24px;
+        line-height: 32px;
+        box-shadow: 0 0 14px rgba(0,0,0,0.6);
+        &:hover{
+            background-color: rgba(0,0,0,0.3);
+            text-shadow: none;
+            ;
+        }
+    }

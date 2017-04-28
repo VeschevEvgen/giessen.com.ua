@@ -1,0 +1,15 @@
+.footer{
+	.navi{
+		margin: 0;
+	}
+}
+.navi-social{
+	@include flex-row(space-between, center);
+	padding: 0;
+	margin: 0;
+	i{
+		@media all and (max-width: ($screen-sm + 1px) )  {
+						font-size: 24px;
+					}
+}
+}

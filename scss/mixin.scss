@@ -1,0 +1,23 @@
+@mixin flex-row($justify-content: flex-start, $align-items: flex-start){
+	display: flex;
+	justify-content: $justify-content;
+	box-sizing: border-box;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: $align-items; 
+}
+@mixin flex-col($justify-content: flex-start, $align-items: flex-start){
+	display: flex;
+	justify-content: $justify-content;
+	box-sizing: border-box;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: $align-items; 
+}
+@mixin background($url-background){
+	background-image: url($url-background);
+	background-color: #cecccf;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
