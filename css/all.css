@@ -945,6 +945,41 @@ hr {
   .hidden-print {
     display: none !important; } }
 
+body {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+
+.wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%; }
+
+.content {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
+
+.footer {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
+
 @font-face {
   font-family: "NautilusPompiliusRegular";
   src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
@@ -1183,14 +1218,6 @@ hr {
         .header .navi-collapse li.navi-item a {
           font-size: 9px; } }
 
-body {
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  background-size: cover; }
-
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-prev:before,
@@ -1324,16 +1351,17 @@ body {
     color: #057a43;
     text-align: center;
     margin-top: 20px;
-    min-height: 70px; }
-    @media all and (max-width: 769px) {
-      .slide-wripper .title {
-        font-size: 24px;
-        line-height: 32px; } }
+    min-height: 40px; }
     @media all and (max-width: 993px) {
       .slide-wripper .title {
         font-size: 30px;
         line-height: 32px;
         margin-top: 0px; } }
+    @media all and (max-width: 769px) {
+      .slide-wripper .title {
+        font-size: 21px;
+        line-height: 24px;
+        min-height: 20px; } }
   .slide-wripper .desc {
     font-family: "NautilusPompiliusRegular";
     font-size: 32px;
@@ -1342,17 +1370,18 @@ body {
     color: #333333;
     margin-top: 30px;
     margin-bottom: 30px;
-    min-height: 100px; }
-    @media all and (max-width: 769px) {
-      .slide-wripper .desc {
-        font-size: 16px;
-        line-height: 21px; } }
+    min-height: 40px; }
     @media all and (max-width: 993px) {
       .slide-wripper .desc {
         font-size: 20px;
         line-height: 36px;
         margin-top: 10px;
         margin-bottom: 10px; } }
+    @media all and (max-width: 769px) {
+      .slide-wripper .desc {
+        font-size: 16px;
+        line-height: 21px;
+        min-height: 20px; } }
   .slide-wripper .price {
     font-family: "NautilusPompiliusRegular";
     font-size: 48px;

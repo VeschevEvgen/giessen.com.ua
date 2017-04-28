@@ -34,15 +34,17 @@
         text-align: center;
         margin-top: 20px;
         // margin-right: 20px;
-        min-height: 70px;
-        @media all and (max-width: ($screen-sm + 1px) )  {
-           font-size: 24px;
-           line-height: 32px;
-       }
+        min-height: 40px;
+        
        @media all and (max-width: ($screen-md + 1px) )  {
            font-size: 30px;
            line-height: 32px;
            margin-top: 0px;
+       }
+       @media all and (max-width: ($screen-sm + 1px) )  {
+           font-size: 21px;
+           line-height: 24px;
+           min-height: 20px;
        }
    }
    .desc{
@@ -53,16 +55,18 @@
     color: $brand-primary;
     margin-top: 30px;
     margin-bottom: 30px;
-    min-height: 100px;
-    @media all and (max-width: ($screen-sm + 1px) )  {
-       font-size: 16px;
-       line-height: 21px;
-   }
+    min-height: 40px;
+   
    @media all and (max-width: ($screen-md + 1px) )  {
        font-size: 20px;
        line-height: 36px;
        margin-top: 10px;
        margin-bottom: 10px;
+   } 
+   @media all and (max-width: ($screen-sm + 1px) )  {
+       font-size: 16px;
+       line-height: 21px;
+       min-height: 20px;
    }
 }
 .price{
